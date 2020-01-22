@@ -1,0 +1,74 @@
+{
+    "easy": [
+        {
+            "ID": 0,
+            "question": "Sample easy question 0",
+            "correct_answer": "Correct Answer 0",
+            "incorrect_answers":
+                [
+                    "Incorrect a",
+                    "Incorrect b",
+                    "Incorrect c"
+                ]
+        },
+        {
+            "ID": 1,
+            "question": "Sample easy question 1",
+            "correct_answer": "Correct Answer",
+            "incorrect_answers":
+                [
+                    "Incorrect a",
+                    "Incorrect b",
+                    "Incorrect c"
+                ]
+        }
+    ],
+    "medium": [
+        {
+            "ID": 0,
+            "question": "Sample medium question 0",
+            "correct_answer": "Correct Answer 0",
+            "incorrect_answers":
+                [
+                    "Incorrect a",
+                    "Incorrect b",
+                    "Incorrect c"
+                ]
+        },
+        {
+            "ID": 1,
+            "question": "Sample medium question 1",
+            "correct_answer": "Correct Answer",
+            "incorrect_answers":
+                [
+                    "Incorrect a",
+                    "Incorrect b",
+                    "Incorrect c"
+                ]
+        }
+    ],
+    "hard": [
+        {
+            "ID": 0,
+            "question": "Sample hard question 0",
+            "correct_answer": "Correct Answer 0",
+            "incorrect_answers":
+                [
+                    "Incorrect a",
+                    "Incorrect b",
+                    "Incorrect c"
+                ]
+        },
+        {
+            "ID": 1,
+            "question": "Sample hard question 1",
+            "correct_answer": "Correct Answer",
+            "incorrect_answers":
+                [
+                    "Incorrect a",
+                    "Incorrect b",
+                    "Incorrect c"
+                ]
+        }
+    ]
+}
