@@ -1,0 +1,53 @@
+
+
+<StartTriviaHomeLayout>:
+    GridLayout:
+        rows: 4
+        padding: (0,0,0,0)
+        spacing: [20,10]
+        FirstGridRow
+        SecondGridRow
+        ThirdGridRow
+        FourthGridRow
+
+
+<FirstGridRow>:
+    BoxLayout:
+        padding: 0,0,0,0
+        Button:
+            text: "File"
+            font_size: 25
+            size_hint: .2,.2
+        Button:
+            text: "Help"
+            font_size: 25
+            size_hint: .2,.2
+        Button:
+            text: "Fullscreen"
+            font_size: 25
+            size_hint: .2,.2
+
+<SecondGridRow>:
+    BoxLayout:
+        BoxLayout:
+            Label:
+                text: 'Welcome to the ancient trivia tech'
+                font_size: 30
+                size_hint: .7, 1
+<ThirdGridRow>:
+    BoxLayout:
+        Button:
+            text: 'Medicine'
+        Button:
+            text: 'Automobiles'
+        Button:
+            text: 'Music'
+<FourthGridRow>
+    BoxLayout:
+        Button:
+            text: 'Food'
+        Button:
+            text: 'Construction'
+        Button:
+            text: 'Telecommunications'
+
