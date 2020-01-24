@@ -36,18 +36,30 @@
                 size_hint: .7, 1
 <ThirdGridRow>:
     BoxLayout:
-        Button:
+        SoundButton:
             text: 'Medicine'
-        Button:
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
+        SoundButton:
             text: 'Automobiles'
-        Button:
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
+        SoundButton:
             text: 'Music'
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
 <FourthGridRow>
     BoxLayout:
-        Button:
+        SoundButton:
             text: 'Food'
-        Button:
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
+        SoundButton:
             text: 'Construction'
-        Button:
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
+        SoundButton:
             text: 'Telecommunications'
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
 

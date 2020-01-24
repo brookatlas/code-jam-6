@@ -1,9 +1,8 @@
 from kivy.core.audio import SoundLoader
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
-from kivy.uix.gridlayout import GridLayout
-from kivy.uix.screenmanager import ScreenManager, FadeTransition, Screen
-
+from kivy.uix.screenmanager import Screen
+from kivy.properties import StringProperty
 
 
 class StartTriviaHomeLayout(Screen):
@@ -14,14 +13,17 @@ class StartTriviaHomeLayout(Screen):
         """
         super(StartTriviaHomeLayout, self).__init__(**kwargs)
 
+    def handle_category_selection(self, categoryName):
+        self.manager.current = "home_screen"
+
+
 
 class SoundButton(Button):
-    def __init__(self, sound_file, **kwargs):
-        super(SoundButton, self).__init__(**kwargs)
-        self.sound = SoundLoader.load(sound_file)
-        self.category = self.text
-    def play(self):
-        self.sound.play()
+    sound_file = StringProperty('assets/button-press-whoosh.wav')
+    def on_press(self):
+        sound = SoundLoader.load(self.sound_file)
+        sound.play()
+
 
 class FirstGridRow(BoxLayout):
     pass
@@ -35,6 +37,13 @@ class ThirdGridRow(BoxLayout):
 class FourthGridRow(BoxLayout):
     pass
 
-def handle_category_selection(self, pressed):
-    pressed.play_sound()
+
+class TriviaCategoryScreen(Screen):
+    category = StringProperty('UnknownCategory')
+    def go_back_home(self):
+        self.manager.current = "start_page"
+    def press_start_button(self):
+        self.manager.current = "play_screen"
+
+class PlayScreen(Screen):
     pass
