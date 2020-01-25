@@ -1,15 +1,35 @@
+from typing import List
 
-class quiz:
-    '''
+
+class Quiz:
+    """
         documentation here.
-    '''
-    def __init__(self, question_list):
-        self.question_list = question_list
+    """
+
+    def __init__(self, questions):
+        # See 'triviaQuestions' folder for the structure of the quiz
+        self.questions = questions["questions"]
         self.question_index = 0
         self.right_answers = 0
         self.wrong_answers = 0
         self.chosen_answer_index = 0
         self.quiz_done = False
+
+    @property
+    def question_title(self) -> str:
+        return self.questions[self.question_index]["question"]
+
+    @property
+    def answers(self) -> List[str]:
+        return self.questions[self.question_index]["answers"]
+
+    @property
+    def correct_answer_index(self) -> int:
+        return self.questions[self.question_index]["correct_answer_index"]
+
+    @property
+    def correct_answer(self) -> str:
+        return self.questions[self.question_index]["answers"]
 
     def is_quiz_done(self):
         """
@@ -24,7 +44,7 @@ class quiz:
         :return:
         a question object of the current question in the quiz
         """
-        return self.question_list[self.question_index]
+        return self.questions[self.question_index]
 
     def answer(self, answer_index):
         """
@@ -34,17 +54,15 @@ class quiz:
             a text of the answer
         :return:
         """
-        if self.quiz_done:
-            return None
-        is_answer_right = self.question_list[self.question_index].answer(answer_index)
-        if len(self.question_list) == (self.question_index + 1):
+        correct_answer_index = self.correct_answer_index
+        if len(self.questions) == self.question_index + 1:
             self.quiz_done = True
         else:
             self.question_index += 1
-        if is_answer_right:
+
+        if answer_index == correct_answer_index:
             self.right_answers += 1
             return True
         else:
             self.wrong_answers += 1
             return False
-        return None

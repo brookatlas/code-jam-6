@@ -1,8 +1,8 @@
-
-class question:
-    '''
+class Question:
+    """
         documentation here
-    '''
+    """
+
     def __init__(self, question_text, answer_list):
         self.question_text = question_text
         self.answer_list = answer_list
@@ -15,7 +15,7 @@ class question:
         :return:
         """
         for answer in self.answer_list:
-            if(answer.get_answer_text() == answer_text):
+            if answer.get_answer_text() == answer_text:
                 return answer
         return None
 

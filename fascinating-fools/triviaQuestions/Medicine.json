@@ -1,0 +1,14 @@
+{
+  "questions": [
+    {
+      "question": "Some first question",
+      "answers": ["firstAnswer", "secondAnswer", "thirdAnswer", "fourthAnswer"],
+      "correct_answer_index": 0
+    },
+    {
+      "question": "Some second question",
+      "answers": ["firstAnswer", "secondAnswer", "thirdAnswer", "fourthAnswer"],
+      "correct_answer_index": 1
+    }
+  ]
+}
