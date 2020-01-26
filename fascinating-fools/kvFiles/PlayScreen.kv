@@ -1,0 +1,19 @@
+<PlayScreen>:
+    GridLayout:
+        rows: 5
+        padding: (200,0,200,100)
+        spacing: [20,10]
+        Label:
+            text: 'question here'
+        Button:
+            text: 'firstAnswer'
+            on_press: root.answer_button_pressed(0)
+        Button:
+            text: 'secondAnswer'
+            on_press: root.answer_button_pressed(1)
+        Button:
+            text: 'thirdAnswer'
+            on_press: root.answer_button_pressed(2)
+        Button:
+            text: 'FourthAnswer'
+            on_press: root.answer_button_pressed(3)

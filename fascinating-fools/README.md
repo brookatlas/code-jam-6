@@ -35,3 +35,8 @@ Follow the format of the questions in the `question` table in the database `stor
 All projects will merged into our Code Jam repository, which uses the [MIT license](../LICENSE). Please make sure that if you add assets, the licenses of those assets are compatible with the MIT license.
 
 We have just forked and about to pull request. (brookatlas)
+
+## Design
+the uml/code design is done via draw.io for simplicity.
+shareable link:
+https://drive.google.com/file/d/1ROL2zcVeL4X6blnyTknbPK-NI8sEVUyy/view?usp=sharing

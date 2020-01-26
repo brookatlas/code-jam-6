@@ -1,0 +1,65 @@
+
+
+<StartTriviaHomeLayout>:
+    GridLayout:
+        rows: 4
+        padding: (0,0,0,0)
+        spacing: [20,10]
+        FirstGridRow
+        SecondGridRow
+        ThirdGridRow
+        FourthGridRow
+
+
+<FirstGridRow>:
+    BoxLayout:
+        padding: 0,0,0,0
+        Button:
+            text: "File"
+            font_size: 25
+            size_hint: .2,.2
+        Button:
+            text: "Help"
+            font_size: 25
+            size_hint: .2,.2
+        Button:
+            text: "Fullscreen"
+            font_size: 25
+            size_hint: .2,.2
+
+<SecondGridRow>:
+    BoxLayout:
+        BoxLayout:
+            Label:
+                text: 'Welcome to the ancient trivia tech'
+                font_size: 30
+                size_hint: .7, 1
+<ThirdGridRow>:
+    BoxLayout:
+        SoundButton:
+            text: 'Medicine'
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
+        SoundButton:
+            text: 'Automobiles'
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
+        SoundButton:
+            text: 'Music'
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
+<FourthGridRow>
+    BoxLayout:
+        SoundButton:
+            text: 'Food'
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
+        SoundButton:
+            text: 'Construction'
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
+        SoundButton:
+            text: 'Telecommunications'
+            sound_file: 'sounds/button-press-whoosh.wav'
+            on_press: root.parent.parent.handle_category_selection(self.text)
+
